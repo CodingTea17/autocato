@@ -14,7 +14,7 @@ Once you have a copy of this project on your machine, you should run `bin/setup`
 2) start the server and explore the app
 
 ## Where the Project is Headed
-In this first round of development, I'd like to focus on the following:
+In this first round of development, I'd like to focus on the following (roughly in order):
 
 - [ ] Setup Heroku [pipelines](https://devcenter.heroku.com/articles/pipelines) (include PR review apps, do not include Heroku CI)
 - [ ] Setup up CI with Github, [Semaphore](https://semaphoreci.com/), and Heroku
@@ -30,6 +30,7 @@ In this first round of development, I'd like to focus on the following:
 - [ ] Document the existing code to make it approachable for other developers
 - [ ] Review existing code to make sure it's clean
 - [ ] Review techniques used in the Sass stuff and make sure that's the way we want to do things
+- [ ] Add project to Code Triage
 
 The main long term goal is to apply both supervised and unsupervised machine learning to automatically categorize a user's bookmarks. So they'd be able to create labels and have them automatically applied, but we'd also apply an unsupervised algorithm to help them see new insights.
 
