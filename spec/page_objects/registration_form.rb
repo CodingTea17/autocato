@@ -7,16 +7,16 @@ module PageObjects
     end
 
     def email=(email)
-      fill_in "Email", with: email
+      fill_in 'Email', with: email
     end
 
     def password=(password)
-      fill_in "Password", with: password
-      fill_in "Password confirmation", with: password
+      fill_in 'Password', with: password
+      fill_in 'Password confirmation', with: password
     end
 
     def submit
-      click_on "Sign up"
+      click_on 'Sign up'
     end
 
     def selector

@@ -1,9 +1,9 @@
 RSpec::Matchers.define :show do |page_object_name|
-  match do |page|
+  match do |_page|
     page_object.on_page?
   end
 
-  match_when_negated do |page|
+  match_when_negated do |_page|
     # on the page and hidden OR not on the page
     page_object.on_page?(visible: false) || !page_object.on_page?
   end

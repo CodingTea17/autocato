@@ -1,7 +1,7 @@
 require 'rails_helper'
 
-RSpec.describe "User Sessions", type: :feature do
-  scenario "User signs in from sign in page" do
+RSpec.describe 'User Sessions', type: :feature do
+  scenario 'User signs in from sign in page' do
     user = create :user
 
     visit new_user_session_path
@@ -12,7 +12,7 @@ RSpec.describe "User Sessions", type: :feature do
   end
 
   # js enabled b/c error only shows in this case
-  scenario "User signs out from welcome page", :js do
+  scenario 'User signs out from welcome page', :js do
     create_and_login_user
 
     visit welcome_index_path
