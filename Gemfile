@@ -70,7 +70,7 @@ gem 'jquery-ui-rails'
 gem 'poltergeist', group: :test
 gem 'pry'
 gem 'rails-controller-testing', group: :test
-gem 'rb-fsevent', '~>0.9.0'
+# gem 'rb-fsevent', '~>0.9.0'
 gem 'record_tag_helper'
 gem 'rspec-rails', '~> 3.6', group: %i[development test]
 gem 'rubocop', '~> 0.49.1', require: false, group: %i[development test]
