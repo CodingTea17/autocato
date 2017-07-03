@@ -23,6 +23,7 @@ WebMock.disable_net_connect!(allow_localhost: true)
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 RSpec.configure do |config|
   config.after(:suite) do
+    puts "\n\n"
     system 'rubocop --auto-correct'
   end
 
