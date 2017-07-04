@@ -70,6 +70,7 @@ gem 'haml-rails'
 gem 'jquery-ui-rails'
 gem 'poltergeist', group: :test
 gem 'pry'
+gem 'rack-timeout'
 gem 'rails-controller-testing', group: :test
 # gem 'rb-fsevent', '~>0.9.0'
 gem 'record_tag_helper'

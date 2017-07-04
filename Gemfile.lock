@@ -181,6 +181,7 @@ GEM
     rack (2.0.3)
     rack-test (0.6.3)
       rack (>= 1.0)
+    rack-timeout (0.4.2)
     rails (5.0.4)
       actioncable (= 5.0.4)
       actionmailer (= 5.0.4)
@@ -337,6 +338,7 @@ DEPENDENCIES
   poltergeist
   pry
   puma (~> 3.0)
+  rack-timeout
   rails (~> 5.0.4)
   rails-controller-testing
   record_tag_helper
