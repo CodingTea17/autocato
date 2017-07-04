@@ -1,3 +1,5 @@
+[![Build Status](https://semaphoreci.com/api/v1/amandadolan/autocato/branches/master/badge.svg)](https://semaphoreci.com/amandadolan/autocato)
+
 # An Intro to Autocato for Developers
 
 ## Welcome
