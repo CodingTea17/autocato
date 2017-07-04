@@ -1,4 +1,4 @@
-[![Build Status](https://semaphoreci.com/api/v1/amandadolan/autocato/branches/master/badge.svg)](https://semaphoreci.com/amandadolan/autocato) [![Code Climate](https://codeclimate.com/github/codeclimate/codeclimate/badges/gpa.svg)](https://codeclimate.com/github/codeclimate/codeclimate) [![Test Coverage](https://codeclimate.com/github/codeclimate/codeclimate/badges/coverage.svg)](https://codeclimate.com/github/codeclimate/codeclimate/coverage)
+[![Build Status](https://semaphoreci.com/api/v1/amandadolan/autocato/branches/master/badge.svg)](https://semaphoreci.com/amandadolan/autocato) [![Code Climate](https://codeclimate.com/github/crawfoal/autocato/badges/gpa.svg)](https://codeclimate.com/github/crawfoal/autocato) [![Test Coverage](https://codeclimate.com/github/crawfoal/autocato/badges/coverage.svg)](https://codeclimate.com/github/crawfoal/autocato/coverage)
 
 # An Intro to Autocato for Developers
 
