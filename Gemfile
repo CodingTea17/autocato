@@ -58,6 +58,7 @@ gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 gem 'bitters'
 gem 'bourbon'
 gem 'capybara', group: %i[development test]
+gem 'codeclimate-test-reporter', group: :test, require: nil
 gem 'database_cleaner', group: :test
 gem 'decent_exposure'
 gem 'devise'
