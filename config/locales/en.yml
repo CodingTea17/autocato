@@ -20,7 +20,7 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  brand_name: "Brand Name"
+  brand_name: "Autocato"
   no_visitor_access: "Whoops, you must be signed in to do that."
   helpers:
     submit:
