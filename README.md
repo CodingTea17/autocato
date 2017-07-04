@@ -18,17 +18,17 @@ Once you have a copy of this project on your machine, you should run `bin/setup`
 ## Where the Project is Headed
 In this first round of development, I'd like to focus on the following (roughly in order):
 
-- [ ] Setup Heroku [pipelines](https://devcenter.heroku.com/articles/pipelines) (include PR review apps, do not include Heroku CI)
-- [ ] Setup up CI with Github, [Semaphore](https://semaphoreci.com/), and Heroku
-- [ ] Setup [Code Climate](https://codeclimate.com/)
+- [X] Setup Heroku [pipelines](https://devcenter.heroku.com/articles/pipelines) (include PR review apps, do not include Heroku CI)
+- [X] Setup up CI with Github, [Semaphore](https://semaphoreci.com/), and Heroku
+- [X] Setup [Code Climate](https://codeclimate.com/)
 - [ ] Look at the linters Code Climate is using, and consider having more than just RuboCop run after the specs
-- [ ] Create sample data for the development environment
 - [ ] Create contribution guidelines
 - [ ] Implement some basic features:
   - [ ] Users can add bookmarks
   - [ ] Users can view a list of all of their bookmarks
   - [ ] Bookmarks are automatically sorted by date added
   - [ ] Users can sort bookmarks by title
+- [ ] Create sample data for the development environment
 - [ ] Document the existing code to make it approachable for other developers
 - [ ] Review existing code to make sure it's clean
 - [ ] Review techniques used in the Sass stuff and make sure that's the way we want to do things
