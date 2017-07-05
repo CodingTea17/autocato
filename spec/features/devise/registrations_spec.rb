@@ -1,10 +1,10 @@
 require 'rails_helper'
 
 RSpec.feature 'User Registrations:', type: :feature do
-  scenario 'Visitor signs up from sign up page' do
+  scenario 'Visitor signs up' do
     new_user_info = build_stubbed :user
 
-    visit new_user_registration_path
+    visit root_path
     registration_form.fill_and_submit_with new_user_info
 
     expect(page).to flash_message t('devise.registrations.signed_up')

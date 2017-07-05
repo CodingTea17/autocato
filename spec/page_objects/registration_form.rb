@@ -7,12 +7,12 @@ module PageObjects
     end
 
     def email=(email)
-      fill_in 'Email', with: email
+      fill_in 'user_email', with: email
     end
 
     def password=(password)
-      fill_in 'Password', with: password
-      fill_in 'Password confirmation', with: password
+      fill_in 'user_password', with: password
+      fill_in 'user_password_confirmation', with: password
     end
 
     def submit
@@ -20,7 +20,7 @@ module PageObjects
     end
 
     def selector
-      '.registrations.new form#new_user'
+      'form#new_user'
     end
   end
 end
