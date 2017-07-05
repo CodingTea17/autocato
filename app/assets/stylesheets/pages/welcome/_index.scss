@@ -7,8 +7,13 @@
     flex-wrap: wrap;
 
     > * {
-      flex-grow: 1;
+      flex: 1 1;
       padding: $small-spacing;
+    }
+
+    #site_description,
+    #sign_up {
+      flex-basis: 40%;
     }
   }
 
