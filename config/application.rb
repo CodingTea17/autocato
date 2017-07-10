@@ -31,6 +31,7 @@ module Autocato
       g.javascripts false
       g.helper false
       g.view_specs false
+      g.jbuilder false
     end
 
     # Settings in config/environments/* take precedence over those specified here.
