@@ -8,4 +8,4 @@ class Autocato.Dismissable
     @toBeDismissed = @dismisser.parent()
 
     @dismisser.on 'click', =>
-      @toBeDismissed.slideUp()
+      @toBeDismissed.slideUp().hide()
