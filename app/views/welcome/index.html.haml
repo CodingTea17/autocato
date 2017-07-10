@@ -4,6 +4,7 @@
     Autocato helps you automatically categorize bookmarks using the power of
     machine learning.
 
-%article#site_entry
-  = render 'devise/registrations/form'
-  = render 'devise/sessions/form'
+- unless user_signed_in?
+  %article#site_entry
+    = render 'devise/registrations/form'
+    = render 'devise/sessions/form'
