@@ -68,6 +68,7 @@ gem 'font-awesome-rails'
 gem 'guard-rspec', require: false, group: :development
 gem 'haml-rails'
 gem 'jquery-ui-rails'
+gem 'launchy', group: :test
 gem 'poltergeist', group: :test
 gem 'pry'
 gem 'rack-timeout'
