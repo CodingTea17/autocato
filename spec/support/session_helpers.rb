@@ -13,7 +13,7 @@ module SessionHelpers
 
   def after_sign_in_path_for(resource)
     resource_name = resource_name_for(resource)
-    try("#{resource_name}_root_path") || root_path
+    try("#{resource_name.underscore}_root_path") || root_path
   end
 
   private
