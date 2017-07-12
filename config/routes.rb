@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
-  resources :bookmarks
   root to: 'welcome#index'
   get 'welcome/index'
+
+  resources :bookmarks
 
   devise_for :users
 end
