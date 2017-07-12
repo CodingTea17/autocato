@@ -55,5 +55,9 @@ RSpec.configure do |config|
   # Filter lines from Rails gems in backtraces.
   config.filter_rails_from_backtrace!
   # arbitrary gems may also be filtered via:
-  config.filter_gems_from_backtrace('spring', 'factory_girl')
+  config.filter_gems_from_backtrace \
+    'spring', 'factory_girl', 'rack', 'warden', 'capybara', 'railties',
+    'active_support', 'devise', 'actionpack'
+  config.backtrace_exclusion_patterns.push \
+    %r{decent_exposure\/flow}, %r{decent_exposure\/context}
 end
