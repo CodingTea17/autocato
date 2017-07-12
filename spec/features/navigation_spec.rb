@@ -29,7 +29,7 @@ RSpec.describe 'Navigation' do
     appbar.open_drawer
     nav_drawer.edit_account_settings
     click_browser_back_button
-    wait_for '.welcome.index'
+    wait_for '.bookmarks.index'
     appbar.open_drawer
 
     expect(nav_drawer).to be_open

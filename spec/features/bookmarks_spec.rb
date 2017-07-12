@@ -2,14 +2,14 @@ require 'rails_helper'
 
 RSpec.feature 'Bookmarks', type: :feature do
   scenario 'User adds a bookmark' do
-    skip 'Not implemented yet'
     create_and_login_user
 
     bookmarks_list.add
     new_bookmark_form.url = 'www.specialsite.com'
     new_bookmark_form.submit
 
-    expect(bookmarks_list.previews).to include(url: 'www.specialsite.com')
+    expect(bookmarks_list.previews).to \
+      include_an_element having_content 'www.specialsite.com'
   end
 
   scenario 'User views their bookmarks' do

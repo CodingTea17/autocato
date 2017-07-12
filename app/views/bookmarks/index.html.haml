@@ -1,6 +1,6 @@
 %h1 Listing bookmarks
 
-%table
+%table#bookmarks
   %thead
     %tr
       %th Url
@@ -10,7 +10,7 @@
       %th
 
   %tbody
-    - @bookmarks.each do |bookmark|
+    - bookmarks.each do |bookmark|
       %tr
         %td= bookmark.url
         %td= bookmark.user

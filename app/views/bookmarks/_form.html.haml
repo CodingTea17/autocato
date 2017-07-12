@@ -1,16 +1,13 @@
-= form_for @bookmark do |f|
-  - if @bookmark.errors.any?
+= form_for bookmark do |f|
+  - if bookmark.errors.any?
     #error_explanation
-      %h2= "#{pluralize(@bookmark.errors.count, "error")} prohibited this bookmark from being saved:"
+      %h2= "#{pluralize(bookmark.errors.count, "error")} prohibited this bookmark from being saved:"
       %ul
-        - @bookmark.errors.full_messages.each do |message|
+        - bookmark.errors.full_messages.each do |message|
           %li= message
 
   .field
     = f.label :url
     = f.text_field :url
-  .field
-    = f.label :user
-    = f.text_field :user
   .actions
     = f.submit 'Save'

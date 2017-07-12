@@ -1,6 +1,6 @@
 class BookmarksController < ApplicationController
-  expose :bookmarks, -> { Bookmark.all }
-  expose :bookmark
+  expose :bookmarks, from: :current_user
+  expose :bookmark, scope: -> { current_user.bookmarks }
 
   def index; end
 
@@ -12,7 +12,7 @@ class BookmarksController < ApplicationController
 
   def create
     if bookmark.save
-      redirect_to bookmark, notice: 'Bookmark was successfully created.'
+      redirect_to bookmarks_path, notice: 'Bookmark was successfully created.'
     else
       render :new
     end
@@ -28,7 +28,7 @@ class BookmarksController < ApplicationController
 
   def destroy
     bookmark.destroy
-    redirect_to bookmarks_url, notice: 'Bookmark was successfully destroyed.'
+    redirect_to bookmarks_path, notice: 'Bookmark was successfully destroyed.'
   end
 
   private
