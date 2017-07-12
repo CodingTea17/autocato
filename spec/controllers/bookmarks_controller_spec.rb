@@ -30,8 +30,9 @@ RSpec.describe BookmarksController, type: :controller do
 
     context 'with invalid params' do
       xit "returns a success response (i.e. to display the 'new' template)" do
-        post :create, params: { bookmark: invalid_attributes }
+        post :create, params: { bookmark: invalid_attributes.merge(url: nil) }
         expect(response).to be_success
+        expect(flash[:alert]).to include 'url'
       end
     end
   end
@@ -42,9 +43,10 @@ RSpec.describe BookmarksController, type: :controller do
         bookmark = create :bookmark
         put :update, params: {
                 id: bookmark.to_param,
-          bookmark: invalid_attributes
+          bookmark: invalid_attributes.merge(url: nil)
         }
         expect(response).to be_success
+        expect(flash[:alert]).to include 'url'
       end
     end
   end
