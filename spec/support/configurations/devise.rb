@@ -10,6 +10,10 @@ module DeviseControllerMacros
     @current_user = user
   end
 
+  def create_and_login_user(*args)
+    log_in create(:user, *args)
+  end
+
   attr_reader :current_user
 end
 
